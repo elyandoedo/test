@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html>
+  
+<head>
+    <title>Replace Example</title>
+</head>
+  
 <body>
+    <h1>Hello welcome to our blog!</h1>
+  	<label for="cars">Choose a car:</label>
 
-<h2>HTML Forms</h2>
-
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+    <p>
+        Hello today we shall learn about
+        replace() function in JavaScript
+        Click on the button below to replace
+        hello with hi.
+    </p>
+  
+    <button onclick="rep()">Replace</button>
+      
+    <script>
+  
+        // Replace the first "Hello"
+        // in the page with "Hi"
+        function rep() {
+            document.body.innerHTML
+                = document.body.innerHTML
+                .replace("Hello", "Hi");
+        }
+    </script>
 </body>
+  
 </html>
-
